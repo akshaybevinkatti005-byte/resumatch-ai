@@ -1,0 +1,216 @@
+{
+  "career_paths": [
+    {
+      "current_role": "Junior Frontend Developer",
+      "next_roles": [
+        {
+          "title": "Mid Frontend Developer",
+          "required_skills": ["React", "TypeScript", "Testing", "REST APIs"],
+          "missing_typical": ["TypeScript", "Jest", "CI/CD"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "Full Stack Developer",
+          "required_skills": ["Node.js", "PostgreSQL", "Docker", "REST APIs"],
+          "missing_typical": ["Node.js", "PostgreSQL", "Docker"],
+          "timeline": "2-3 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Mid Frontend Developer",
+      "next_roles": [
+        {
+          "title": "Senior Frontend Developer",
+          "required_skills": ["React", "TypeScript", "Architecture", "Performance", "Mentoring"],
+          "missing_typical": ["Architecture", "Performance Optimization", "Mentoring"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "Frontend Architect",
+          "required_skills": ["Micro-Frontends", "Design Systems", "Webpack", "CI/CD", "Leadership"],
+          "missing_typical": ["Micro-Frontends", "Design Systems", "Leadership"],
+          "timeline": "3-5 years"
+        },
+        {
+          "title": "Engineering Manager",
+          "required_skills": ["Leadership", "Project Management", "Agile", "Communication"],
+          "missing_typical": ["Leadership", "Project Management", "Stakeholder Management"],
+          "timeline": "3-5 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Junior Backend Developer",
+      "next_roles": [
+        {
+          "title": "Mid Backend Developer",
+          "required_skills": ["Python", "SQL", "REST APIs", "Docker", "Git"],
+          "missing_typical": ["Docker", "Testing", "CI/CD"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "Full Stack Developer",
+          "required_skills": ["React", "JavaScript", "HTML", "CSS"],
+          "missing_typical": ["React", "JavaScript", "CSS"],
+          "timeline": "1-2 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Mid Backend Developer",
+      "next_roles": [
+        {
+          "title": "Senior Backend Developer",
+          "required_skills": ["System Design", "Microservices", "Kubernetes", "Message Queues", "Caching"],
+          "missing_typical": ["System Design", "Kubernetes", "Apache Kafka"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "DevOps Engineer",
+          "required_skills": ["Kubernetes", "Terraform", "CI/CD", "AWS", "Monitoring"],
+          "missing_typical": ["Terraform", "Kubernetes", "Prometheus"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "Solutions Architect",
+          "required_skills": ["AWS", "System Design", "Microservices", "Security", "Communication"],
+          "missing_typical": ["AWS Certification", "Architecture Patterns", "Communication"],
+          "timeline": "3-5 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Full Stack Developer",
+      "next_roles": [
+        {
+          "title": "Senior Full Stack Developer",
+          "required_skills": ["System Design", "DevOps", "Performance", "Security", "Mentoring"],
+          "missing_typical": ["System Design", "Security", "Mentoring"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "Tech Lead",
+          "required_skills": ["Architecture", "Leadership", "Code Review", "Agile", "Communication"],
+          "missing_typical": ["Architecture", "Leadership", "Stakeholder Management"],
+          "timeline": "2-4 years"
+        },
+        {
+          "title": "Product Engineer",
+          "required_skills": ["Product Management", "Analytics", "A/B Testing", "UX Design"],
+          "missing_typical": ["Product Management", "Analytics", "User Research"],
+          "timeline": "1-3 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Data Analyst",
+      "next_roles": [
+        {
+          "title": "Senior Data Analyst",
+          "required_skills": ["SQL", "Python", "Tableau", "Statistical Analysis", "Communication"],
+          "missing_typical": ["Python", "Statistical Modeling", "Stakeholder Management"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "Data Scientist",
+          "required_skills": ["Machine Learning", "Python", "Scikit-learn", "Deep Learning", "Statistics"],
+          "missing_typical": ["Machine Learning", "Scikit-learn", "Deep Learning"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "Data Engineer",
+          "required_skills": ["Apache Spark", "ETL", "AWS", "Apache Kafka", "Python"],
+          "missing_typical": ["Apache Spark", "ETL Pipelines", "Apache Kafka"],
+          "timeline": "1-2 years"
+        }
+      ]
+    },
+    {
+      "current_role": "Data Scientist",
+      "next_roles": [
+        {
+          "title": "Senior Data Scientist",
+          "required_skills": ["Deep Learning", "NLP", "MLOps", "Research", "Leadership"],
+          "missing_typical": ["MLOps", "Research Papers", "Leadership"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "ML Engineer",
+          "required_skills": ["MLOps", "Docker", "Kubernetes", "TensorFlow", "Model Deployment"],
+          "missing_typical": ["MLOps", "Kubernetes", "Model Serving"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "AI Research Scientist",
+          "required_skills": ["Deep Learning", "Research", "PyTorch", "Mathematics", "Publications"],
+          "missing_typical": ["Advanced Math", "Research Methodology", "Publications"],
+          "timeline": "3-5 years"
+        }
+      ]
+    },
+    {
+      "current_role": "DevOps Engineer",
+      "next_roles": [
+        {
+          "title": "Senior DevOps Engineer",
+          "required_skills": ["Kubernetes", "Terraform", "AWS", "Security", "Architecture"],
+          "missing_typical": ["Security", "Cost Optimization", "Architecture"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "SRE",
+          "required_skills": ["Monitoring", "Incident Response", "SLOs", "Automation", "Go"],
+          "missing_typical": ["SLO Design", "Incident Management", "Go"],
+          "timeline": "1-2 years"
+        },
+        {
+          "title": "Cloud Architect",
+          "required_skills": ["AWS", "Multi-Cloud", "Security", "Cost Optimization", "Leadership"],
+          "missing_typical": ["Multi-Cloud", "Enterprise Architecture", "Leadership"],
+          "timeline": "3-5 years"
+        }
+      ]
+    },
+    {
+      "current_role": "UI/UX Designer",
+      "next_roles": [
+        {
+          "title": "Senior UX Designer",
+          "required_skills": ["User Research", "Prototyping", "Design Systems", "Accessibility", "Leadership"],
+          "missing_typical": ["Design Systems", "Accessibility", "Research Methods"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "Product Designer",
+          "required_skills": ["Product Strategy", "Data Analysis", "Business Acumen", "Figma"],
+          "missing_typical": ["Product Strategy", "Data Analysis", "Business Metrics"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "Design Manager",
+          "required_skills": ["Leadership", "Hiring", "Design Operations", "Stakeholder Management"],
+          "missing_typical": ["People Management", "Design Ops", "Budgeting"],
+          "timeline": "3-5 years"
+        }
+      ]
+    },
+    {
+      "current_role": "QA Engineer",
+      "next_roles": [
+        {
+          "title": "Senior QA Engineer",
+          "required_skills": ["Test Automation", "Selenium", "CI/CD", "Performance Testing", "API Testing"],
+          "missing_typical": ["Performance Testing", "Security Testing", "CI/CD Integration"],
+          "timeline": "2-3 years"
+        },
+        {
+          "title": "SDET",
+          "required_skills": ["Python", "JavaScript", "Playwright", "Docker", "Architecture"],
+          "missing_typical": ["Programming", "Docker", "Architecture"],
+          "timeline": "1-2 years"
+        }
+      ]
+    }
+  ]
+}

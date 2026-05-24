@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────
+   ResuMatch AI — Global Design System
+   ────────────────────────────────────────────── */
+
+:root {
+  --navy-900: #0a0f1e;
+  --navy-800: #0f1629;
+  --navy-700: #151d35;
+  --navy-600: #1b2541;
+  --electric-500: #3b82f6;
+  --neon-500: #10b981;
+  --amber-500: #f59e0b;
+  --rose-500: #f43f5e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--navy-900);
+  color: #e2e8f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background ambient glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(16, 185, 129, 0.04) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(245, 158, 11, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ──────── Scrollbar ──────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 22, 41, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* ──────── Glass Card ──────── */
+@layer components {
+  .glass-card {
+    @apply relative rounded-2xl border border-white/[0.06] overflow-hidden;
+    background: linear-gradient(135deg, rgba(15, 22, 41, 0.8) 0%, rgba(21, 29, 53, 0.6) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.3) 50%, transparent 100%);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #60a5fa 0%, #34d399 50%, #60a5fa 100%);
+    background-size: 200% 200%;
+    animation: gradient 6s ease infinite;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-blue {
+    @apply badge bg-electric-500/20 text-electric-400 border border-electric-500/20;
+  }
+  .badge-green {
+    @apply badge bg-neon-500/20 text-neon-400 border border-neon-500/20;
+  }
+  .badge-amber {
+    @apply badge bg-amber-500/20 text-amber-400 border border-amber-500/20;
+  }
+  .badge-rose {
+    @apply badge bg-rose-500/20 text-rose-400 border border-rose-500/20;
+  }
+}
+
+/* ──────── Animations ──────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.1) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* ──────── Upload Zone ──────── */
+.upload-zone {
+  @apply relative rounded-2xl border-2 border-dashed border-white/10 p-12 text-center cursor-pointer transition-all duration-300;
+}
+.upload-zone:hover {
+  @apply border-electric-500/50;
+  background: rgba(59, 130, 246, 0.03);
+}
+.upload-zone.drag-over {
+  @apply border-electric-500 bg-electric-500/5;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+}

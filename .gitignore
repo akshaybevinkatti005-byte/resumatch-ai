@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+*.pyc
+__pycache__/
+.DS_Store
+.env
+.env.local
+venv/
+backend/venv/
+resumatch.db
+*.db
+.vscode/
+.idea/
+*.log
+frontend/.vite/
+*.zip

@@ -1,0 +1,11 @@
+# ResuMatch AI — Core Dependencies (NLP models optional)
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.9
+PyMuPDF==1.24.14
+spacy==3.8.13
+onnxruntime==1.25.1
+numpy>=2.0.0
+httpx==0.27.0
+psutil==5.9.8
