@@ -148,6 +148,11 @@ export interface AuthState {
   isAdmin: boolean;
 }
 
+export interface RegistrationResponse {
+  requires_verification: boolean;
+  message?: string;
+}
+
 // Admin
 export interface AdminUser {
   id: number;

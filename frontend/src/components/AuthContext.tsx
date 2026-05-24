@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
-import type { User } from '../types';
+import type { User, RegistrationResponse } from '../types';
 import api from '../api/client';
 
 interface AuthContextType {
@@ -8,7 +8,7 @@ interface AuthContextType {
   isAuthenticated: boolean;
   isAdmin: boolean;
   login: (email: string, password: string) => Promise<void>;
-  register: (email: string, name: string, password: string) => Promise<void>;
+  register: (email: string, name: string, password: string) => Promise<RegistrationResponse>;
   logout: () => Promise<void>;
   loading: boolean;
   error: string | null;
